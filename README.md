@@ -1,16 +1,17 @@
+```mermaid
 graph LR
     subgraph "Time t-1"
-        Ht-1[h<sub>t-1</sub>]
+        Ht-1[hₜ₋₁]
     end
     subgraph "Time t"
-        Xt[x<sub>t</sub>]
-        Ht[h<sub>t</sub>]
+        Xt[xₜ]
+        Ht[hₜ]
     end
     subgraph "Weights"
-        Wh[W<sub>h</sub>]
-        Wx[W<sub>x</sub>]
+        Wh[Wₕ]
+        Wx[Wₓ]
     end
-    B[b<sub>h</sub>]
+    B[bₕ]
     
     Ht-1 -->|Hidden state| Wh
     Xt -->|Input| Wx
@@ -28,3 +29,4 @@ graph LR
     style B fill:#bfb,stroke:#333,stroke-width:2px
     style Sum fill:#ff9,stroke:#333,stroke-width:2px
     style Tanh fill:#f99,stroke:#333,stroke-width:2px
+\```
